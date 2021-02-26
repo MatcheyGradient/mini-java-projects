@@ -31,3 +31,4 @@ public class main {
 }
 
 //Discord webhook api (with dependencies) -- https://github.com/RANKTW/Discord-Webhooks-API/releases/download/v1.0/Discord-Webhooks-API-WithDependencies.jar
+//Gets ip, pc name, and os
