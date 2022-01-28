@@ -4,22 +4,21 @@ public class Main {
 
     static Random rand = new Random();
 
-    static int right = 0;
-    static int wrong = 0;
-    static double percentRight = right / (right + wrong + 0.00000000000000001); // lazy ass way to go around division by zero lmaooooooooo
+    static double right = 0;
+    static double wrong = 0;
+    static double percentRight;
 
     public static void main(String[] args) {
-        for(int i = 0; i < 10; i++){ // does the sim n number of times
+        for(int i = 0; i < 100; i++){ // does the sim n number of times
             start();
         }
 
         makePercent();
         System.out.println(percentRight * 100 + "%");
-
     }
 
     public static void makePercent(){ // updates percent
-        percentRight = right / (right + wrong + 0.00000000000000001);
+        percentRight = right / (right + wrong);
     }
 
     private static void start() {
@@ -48,6 +47,4 @@ public class Main {
             wrong++;
         }
     }
-
-
 }
