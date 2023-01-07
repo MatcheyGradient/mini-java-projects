@@ -4,9 +4,8 @@ public class Hangman {
 
     static int wrongLimit = 6;
 
-
     public static void main(String[] args){
-        hang("zero0 lol");
+        hang("hangman is very fun to play");
     }
 
     static void hang(String word){
